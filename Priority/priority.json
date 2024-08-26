@@ -1,0 +1,256 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "flex-wrap": "wrap",
+    "display": "flex"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "inlineEditField": "@currentField",
+      "style": {
+        "--inline-editor-border-color": "#005D93",
+        "--inline-editor-border-radius": "16px",
+        "box-sizing": "border-box",
+        "padding": "4px 8px",
+        "overflow": "hidden",
+        "text-overflow": "ellipsis",
+        "display": "flex",
+        "border-radius": "16px",
+        "border-width": "1px solid",
+        "align-items": "center",
+        "white-space": "nowrap",
+        "margin": "4px",
+        "color": "=if(@currentField == 'Low', '#B47C00', if(@currentField == 'Medium', '#3C3C48', if(@currentField == 'High', '#DB2777', if(@currentField == 'Critical', '#a61215', '')",
+        "font-size": ".8rem",
+        "font-weight": "800",
+        "height": "24px",
+        "line-height": "auto",
+        "cursor": "pointer"
+      },
+      "attributes": {
+        "class": {
+          "operator": ":",
+          "operands": [
+            {
+              "operator": "==",
+              "operands": [
+                "[$Priority]",
+                "Critical"
+              ]
+            },
+            "",
+            {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Priority]",
+                    "High"
+                  ]
+                },
+                "",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Priority]",
+                        "Medium"
+                      ]
+                    },
+                    "",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Priority]",
+                            "Low"
+                          ]
+                        },
+                        "",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Priority]",
+                                ""
+                              ]
+                            },
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "style": {
+            "line-height": "16px",
+            "height": "14px"
+          },
+          "attributes": {
+            "iconName": {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Priority]",
+                    "Critical"
+                  ]
+                },
+                "IncidentTriangle",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Priority]",
+                        "High"
+                      ]
+                    },
+                    "Market",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Priority]",
+                            "Medium"
+                          ]
+                        },
+                        "StatusCircleRing",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Priority]",
+                                "Low"
+                              ]
+                            },
+                            "MarketDown",
+                            {
+                              "operator": ":",
+                              "operands": [
+                                {
+                                  "operator": "==",
+                                  "operands": [
+                                    "[$Priority]",
+                                    ""
+                                  ]
+                                },
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "elmType": "span",
+          "style": {
+            "overflow": "hidden",
+            "text-overflow": "ellipsis",
+            "padding": "0 3px"
+          },
+          "txtContent": "[$Priority]",
+          "attributes": {
+            "class": {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Priority]",
+                    "Crtical"
+                  ]
+                },
+                "",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Priority]",
+                        "High"
+                      ]
+                    },
+                    "",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Priority]",
+                            "Medium"
+                          ]
+                        },
+                        "",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Priority]",
+                                "Low"
+                              ]
+                            },
+                            "",
+                            {
+                              "operator": ":",
+                              "operands": [
+                                {
+                                  "operator": "==",
+                                  "operands": [
+                                    "[$Priority]",
+                                    ""
+                                  ]
+                                },
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

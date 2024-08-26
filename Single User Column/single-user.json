@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "display": "=if(@currentField,'','none')"
+  },
+  "children": [
+    {
+      "elmType": "img",
+      "style": {
+        "width": "32px",
+        "min-width": "32px",
+        "height": "32px",
+        "overflow": "hidden",
+        "border-radius": "50%",
+        "margin": "2px"
+      },
+      "attributes": {
+        "src": "=getUserImage(@currentField.email,'s')",
+        "title": "@currentField.title"
+      }
+    },
+    {
+      "elmType": "span",
+      "style": {
+        "vertical-align": "middle",
+        "margin-left": "2px"
+      },
+      "txtContent": "@currentField.title"
+    }
+  ],
+  "defaultHoverField": "@currentField"
+}

@@ -1,0 +1,256 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "flex-wrap": "wrap",
+    "display": "flex"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "inlineEditField": "@currentField",
+      "style": {
+        "--inline-editor-border-color": "#050314",
+        "--inline-editor-border-radius": "16px",
+        "box-sizing": "border-box",
+        "padding": "4px 8px",
+        "overflow": "hidden",
+        "text-overflow": "ellipsis",
+        "display": "flex",
+        "border-radius": "16px",
+        "border-width": "1px solid",
+        "align-items": "center",
+        "white-space": "nowrap",
+        "margin": "4px",
+        "color": "#050314",
+        "font-size": ".8rem",
+        "font-weight": "800",
+        "height": "24px",
+        "line-height": "auto",
+        "cursor": "pointer"
+      },
+      "attributes": {
+        "class": {
+          "operator": ":",
+          "operands": [
+            {
+              "operator": "==",
+              "operands": [
+                "[$Group]",
+                "Design"
+              ]
+            },
+            "",
+            {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Group]",
+                    "Engineering"
+                  ]
+                },
+                "",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Group]",
+                        "Planning"
+                      ]
+                    },
+                    "",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Group]",
+                            "Research"
+                          ]
+                        },
+                        "",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Group]",
+                                ""
+                              ]
+                            },
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "style": {
+            "line-height": "16px",
+            "height": "14px"
+          },
+          "attributes": {
+            "iconName": {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Group]",
+                    "Design"
+                  ]
+                },
+                "Like",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Group]",
+                        "Engineering"
+                      ]
+                    },
+                    "Code",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Group]",
+                            "Planning"
+                          ]
+                        },
+                        "PlanView",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Group]",
+                                "Research"
+                              ]
+                            },
+                            "People",
+                            {
+                              "operator": ":",
+                              "operands": [
+                                {
+                                  "operator": "==",
+                                  "operands": [
+                                    "[$Group]",
+                                    ""
+                                  ]
+                                },
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "elmType": "span",
+          "style": {
+            "overflow": "hidden",
+            "text-overflow": "ellipsis",
+            "padding": "0 3px"
+          },
+          "txtContent": "[$Group]",
+          "attributes": {
+            "class": {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Group]",
+                    "Design"
+                  ]
+                },
+                "",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Group]",
+                        "Engineering"
+                      ]
+                    },
+                    "",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Group]",
+                            "Planning"
+                          ]
+                        },
+                        "",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Group]",
+                                "Research"
+                              ]
+                            },
+                            "",
+                            {
+                              "operator": ":",
+                              "operands": [
+                                {
+                                  "operator": "==",
+                                  "operands": [
+                                    "[$Group]",
+                                    ""
+                                  ]
+                                },
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

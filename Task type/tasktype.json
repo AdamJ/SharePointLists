@@ -1,0 +1,110 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "display": "flex",
+    "flex-wrap": "wrap"
+  },
+  "children": [
+    {
+      "elmType": "span",
+      "style": {
+        "padding": "8px 0",
+        "font-size": "1rem"
+      },
+      "attributes": {
+        "iconName": "=if(@currentField == 'Epic', 'FolderList',  if(@currentField == 'Milestone', 'FavoriteList', if(@currentField == 'Task', 'TaskList', if(@currentField == 'Subtask', 'BulletedTreeList', ''))"
+      }
+    },
+    {
+      "elmType": "div",
+      "inlineEditField": "@currentField",
+      "style": {
+        "--inline-editor-border-radius": "16px",
+        "border": "0 solid",
+        "border-radius": "16px",
+        "box-sizing": "border-box",
+        "padding": "4px 8px",
+        "overflow": "hidden",
+        "text-overflow": "ellipsis",
+        "display": "flex",
+        "align-items": "center",
+        "white-space": "nowrap",
+        "color": "#000307",
+        "font-size": ".8rem",
+        "font-weight": "800",
+        "height": "24px",
+        "cursor": "pointer"
+      },
+      "attributes": {
+        "class": {
+          "operator": ":",
+          "operands": [
+            {
+              "operator": "==",
+              "operands": [
+                "@currentField",
+                "Task"
+              ]
+            },
+            "",
+            {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "@currentField",
+                    "Subtask"
+                  ]
+                },
+                "",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "@currentField",
+                        "Epic"
+                      ]
+                    },
+                    "",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "@currentField",
+                            ""
+                          ]
+                        },
+                        "",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "@currentField",
+                                "Milestone"
+                              ]
+                            },
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "txtContent": "@currentField"
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "flex-wrap": "wrap",
+    "display": "flex"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "inlineEditField": "@currentField",
+      "style": {
+        "--inline-editor-border-radius": "16px",
+        "box-sizing": "border-box",
+        "padding": "4px 8px",
+        "overflow": "hidden",
+        "text-overflow": "ellipsis",
+        "display": "flex",
+        "border-radius": "16px",
+        "border-width": "1px solid",
+        "align-items": "center",
+        "white-space": "nowrap",
+        "margin": "4px",
+        "color": "=if(@currentField == 'Backlog', '#B47C00', if(@currentField == 'Ready for Dev', '#EA580C', if(@currentField == 'In progress', '#00704A', if(@currentField == 'Completed', '#005D93', if(@currentField == 'Blocked', '#a61215', '')",
+        "font-size": ".8rem",
+        "font-weight": "800",
+        "height": "24px",
+        "line-height": "auto",
+        "cursor": "pointer"
+      },
+      "attributes": {
+        "class": {
+          "operator": ":",
+          "operands": [
+            {
+              "operator": "==",
+              "operands": [
+                "[$Status]",
+                "Completed"
+              ]
+            },
+            "",
+            {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Status]",
+                    "Ready for Dev"
+                  ]
+                },
+                "",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Status]",
+                        "In progress"
+                      ]
+                    },
+                    "",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Status]",
+                            "Blocked"
+                          ]
+                        },
+                        "",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Status]",
+                                "Backlog"
+                              ]
+                            },
+                            "",
+                            {
+                              "operator": ":",
+                              "operands": [
+                                {
+                                  "operator": "==",
+                                  "operands": [
+                                    "[$Status]",
+                                    ""
+                                  ]
+                                },
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "style": {
+            "line-height": "16px",
+            "height": "14px"
+          },
+          "attributes": {
+            "iconName": {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Status]",
+                    "Completed"
+                  ]
+                },
+                "Completed",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Status]",
+                        "In progress"
+                      ]
+                    },
+                    "ProgressLoopOuter",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Status]",
+                            "Ready for Dev"
+                          ]
+                        },
+                        "Code",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Status]",
+                                "Blocked"
+                              ]
+                            },
+                            "StatusCircleBlock",
+                            {
+                              "operator": ":",
+                              "operands": [
+                                {
+                                  "operator": "==",
+                                  "operands": [
+                                    "[$Status]",
+                                    "Backlog"
+                                  ]
+                                },
+                                "Backlog",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "elmType": "span",
+          "style": {
+            "overflow": "hidden",
+            "text-overflow": "ellipsis",
+            "padding": "0 3px"
+          },
+          "txtContent": "[$Status]",
+          "attributes": {
+            "class": {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    "[$Status]",
+                    "Completed"
+                  ]
+                },
+                "",
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        "[$Status]",
+                        "In progress"
+                      ]
+                    },
+                    "",
+                    {
+                      "operator": ":",
+                      "operands": [
+                        {
+                          "operator": "==",
+                          "operands": [
+                            "[$Status]",
+                            "Ready for Dev"
+                          ]
+                        },
+                        "",
+                        {
+                          "operator": ":",
+                          "operands": [
+                            {
+                              "operator": "==",
+                              "operands": [
+                                "[$Status]",
+                                "Blocked"
+                              ]
+                            },
+                            "",
+                            {
+                              "operator": ":",
+                              "operands": [
+                                {
+                                  "operator": "==",
+                                  "operands": [
+                                    "[$Status]",
+                                    "Backlog"
+                                  ]
+                                },
+                                "",
+                                {
+                                  "operator": ":",
+                                  "operands": [
+                                    {
+                                      "operator": "==",
+                                      "operands": [
+                                        "[$Status]",
+                                        ""
+                                      ]
+                                    },
+                                    "",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
