@@ -17,5 +17,3 @@ Set the size of work using the agile t-shirt sizing method.
 ## Interactions
 
 - None
-
-![alt text](task-type.png)

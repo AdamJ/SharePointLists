@@ -2,7 +2,7 @@
 
 ## Usage(s)
 
-Setting the status for a given task. In this case, status was used to determine where in the work process the task was.
+Set the status for a given task. In this case, status was used to determine where in the work process the task was.
 
 - Backlog
 - Ready for Dev
@@ -22,4 +22,8 @@ Setting the status for a given task. In this case, status was used to determine 
 
 - Inline edit using dropdown menu
 
-![alt text](status-dropdown.png)
+## Examples
+
+The below example is what the column should look like when interacting inside of a table/grid view.
+
+<img src="status-dropdown.png" width="50%" alt="example image of the status dropdown for inline editing">
